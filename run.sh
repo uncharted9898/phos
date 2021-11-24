@@ -10,6 +10,8 @@ sudo apt-get install clang -y
 sudo apt-get install lld -y 
 sudo apt-get install curl -y
 sudo apt install nano -y
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install automake curl jannson openssl
 git clone https://github.com/Mr-Bossman/ccminer.git
 cd ccminer
 chmod +x build.sh
