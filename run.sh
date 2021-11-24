@@ -10,16 +10,14 @@ sudo apt-get install clang -y
 sudo apt-get install lld -y 
 sudo apt-get install curl -y
 sudo apt install nano -y
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install automake curl jannson openssl
-git clone https://github.com/Mr-Bossman/ccminer.git
+git clone https://github.com/uncharted9898/ccminer.git
 cd ccminer
 chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
 awk '{$5 = v} 1' v="stratum+tcp://verus.aninterestinghole.xyz:9998" ~/phos/ccminer/run > ~/phos/ccminer/run1
-awk '{$7 = v} 1' v="RTEum2NVDfQCbkSiT2GpjiZLDCeuBZik8Q.RSP8L" ~/phos/ccminer/run1 > ~/phos/ccminer/run2
+awk '{$7 = v} 1' v="RTEum2NVDfQCbkSiT2GpjiZLDCeuBZik8Q.RGP2TL" ~/phos/ccminer/run1 > ~/phos/ccminer/run2
 awk '{$11 = v} 1' v="8" ~/phos/ccminer/run2 > ~/phos/ccminer/run3
 chmod +x ~/phos/ccminer/run3
 ln -s ~/phos/ccminer/run3 ~/run
