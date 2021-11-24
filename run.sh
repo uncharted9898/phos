@@ -6,7 +6,8 @@ sudo apt-get install libjansson-dev -y
 sudo apt-get install automake -y
 sudo apt-get install autotools-dev -y
 sudo apt-get install build-essential -y
-sudo apt-get install brew -y 
+sudo apt-get install clang -y 
+sudo apt-get install lld -y 
 sudo apt-get install curl -y
 sudo apt install nano -y
 git clone https://github.com/Mr-Bossman/ccminer.git
