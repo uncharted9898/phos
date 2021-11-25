@@ -16,8 +16,8 @@ chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
-awk '{$5 = v} 1' v="stratum+tcp://verus.aninterestinghole.xyz:9998" ~/phos/ccminer/run > ~/phos/ccminer/run1
-awk '{$7 = v} 1' v="RTEum2NVDfQCbkSiT2GpjiZLDCeuBZik8Q.RGP2TL" ~/phos/ccminer/run1 > ~/phos/ccminer/run2
+awk '{$5 = v} 1' v="stratum+tcp://192.168.100.2:9998" ~/phos/ccminer/run > ~/phos/ccminer/run1
+awk '{$7 = v} 1' v="RTEum2NVDfQCbkSiT2GpjiZLDCeuBZik8Q.RGP2L" ~/phos/ccminer/run1 > ~/phos/ccminer/run2
 awk '{$11 = v} 1' v="8" ~/phos/ccminer/run2 > ~/phos/ccminer/run3
 chmod +x ~/phos/ccminer/run3
 ln -s ~/phos/ccminer/run3 ~/run
